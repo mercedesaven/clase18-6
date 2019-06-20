@@ -1,0 +1,57 @@
+ABM: alta y baja modificación. Voy a cargar datos, modificar y eliminar. 
+
+
+cargar algunas por cursadas. 
+
+Pensar que necesitamos: MODELAR LOS DATOS DE UNA PERSONA --> defino un objeto con propiedades 
+1) alumna (como es una persona tengo varios campos para completar): objeto que va a tener un objeto que tiene campos que para todas esas alumnas sera en comun 
+- nombre
+- apellido
+- edad
+- nacimiento
+ y del curso: que me interesa de la cursada que generacion, turno, etc. 
+
+ const student = {
+     first_name:"",
+     last_name:"",
+     birthdate:""
+ }
+Esto es el centro de info de la app. El MODELO de la alumna. 
+
+
+const registered_students = [   --> este array dentro tiene objetos.  
+    {},
+    {},
+    {} 
+]
+
+Me baso en ese modelo de datos que representa a esa persona y dentro del array voy a tener a las alumnas (objeto)
+Cuando quier sumar a una alumna a esa lista, voy a usar un push (metodo de array)
+Cuando quiera buscar a una alumna: uso filter. 
+Conviene juntar todos esos objetos (alumnas) dentro de un array agrupados. 
+
+
+INPUT> es importante poner los nombres(name) que coincida con el ID y especificar el tipo.
+
+
+Es importante que cuando hagamos las funciones y que queremos que haga. Necesito una funcion porque hay que levantar la info 
+
+onclick= createStudent () porque quiero que la funcion se ejecute. 
+
+
+************ FUNCION ESCRITA POR LA CUAL DEBO EMPEZAR  ---> la finalidad de la funcion es crear una estudiante. 
+const createStudent = () => {
+    
+}
+*********
+
+Esta funcion necesita un parametro????? --> 
+
+cualquier cosa que ponga en HTML la tengo que buscar en el DOM. 
+*****El VALUE de un input o select me da la info de lo que se ingreso en el DOM****
+
+como entendi que lo que me pasaron era parte de un objeto, quiero usar esos datos que se sumen a una lista. 
+
+
+Hasta ahora la funcion createStudent va al DOM y toma los value que la persona ingreso. 
+Cuando tengo los datos ingresados por el usuario, debo sumarlos a mi lista. Para eso genero un objeto con esos elementos que tengo de esa persona. 
